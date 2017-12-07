@@ -1,0 +1,226 @@
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { box-sizing: border-box; }
+
+form,
+.headerContainer,
+#quizResults,
+.seeMyResults {
+    min-height: 100vh;
+}
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.headerContainer{
+	background-repeat: no-repeat;
+	background-image: url('https://static1.squarespace.com/static/5853024829687fe1e2ae87b4/t/5992147bcd39c32a7ec82e41/1502745729689/con.theduskinus.site.br.jpg?format=2500w');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+button{
+	z-index: 8; 
+	white-space: nowrap; 
+	font-size: 17px; 
+	line-height: 23px; 
+	font-weight: 700; 
+	color: rgb(0, 0, 0); 
+	font-family: Lato; 
+	background-color: rgb(255, 255, 255); 
+	border-color: rgb(0, 0, 0); 
+	border-radius: 22px; 
+	box-shadow: none; 
+	box-sizing: border-box; 
+	cursor: pointer; 
+	margin-top: 20px; 
+	padding: 12px 35px; 
+	border-width: 0px;
+}
+h1{
+	color: rgb(255, 255, 255);
+	font-family: Lato; 
+	font-size: 80px;
+	line-height: 93px;
+	font-weight: 700;
+}
+h2{
+	color: rgb(255, 255, 255);
+	font-family: Lato; 
+	font-size: 50px;
+	line-height: 53px;
+	font-weight: 700;
+	margin-top: -30px;
+	padding: 0;
+}
+.titleContainer{
+	background-color: rgba(0, 0, 0, .4);
+	border: 2px solid #9b9b9b;
+	margin-top: 20%;
+	padding: 5%;
+	border-radius: 4px;
+}
+.lightContainer{
+	background-color: rgba(225, 225, 225, .3);
+	border: 2px solid black;
+	margin-top: 20%;
+	padding: 5%;
+}
+.darkContainer{
+	background-color: rgba(66, 49, 49, .4);
+	border: 2px solid black;
+	margin-top: 20%;
+	padding: 5%;
+}
+.questionContainer {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.answerContainer {
+	text-align: left;
+}
+.answer, .result{
+	font-family: Lato; 
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	margin-left: 15px;
+	padding: 5px;
+}
+.warning{
+	text-align: center;
+	color: red;
+	font-size: 1.3rem;
+}
+
+#question1{
+	background-repeat: no-repeat;
+	background-image: url('images/h3-background-img-2.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+#question2{
+	background-repeat: no-repeat;
+	background-image: url('images/h3-background-img-1.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+#question3{
+	background-repeat: no-repeat;
+	background-image: url('images/h3-background-img-3.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+#question4{
+	background-repeat: no-repeat;
+	background-image: url('images/h3-background-img-5.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+#question5{
+	background-repeat: no-repeat;
+	background-image: url('images/h3-background-img-6.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+#question6{
+	background-repeat: no-repeat;
+	background-image: url('images/h3-background-img-7.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+.seeMyResults{
+	display: none;
+	background-repeat: no-repeat;
+	background-image: url('images/new1.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	width: 100%; height: 100%;
+}
+.display{
+	display: block;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 10px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+}
+footer h4{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+
+/****************************
+MEDIA QUERIES
+****************************/
+
+
+@media screen and (max-width: 870px) {
+    h1{
+    	font-size: 2.8rem;
+    }
+
+    .titleContainer, .lightContainer, .darkContainer{
+    	width: 80%;
+    }
+    .wrapper{
+    	align-items: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+	h1{
+		font-size: 2.5rem;
+		line-height: 60px;
+	}
+	h2{
+		font-size: 1.5rem;
+		line-height: 30px;
+	}
+	.answer, .result{
+		font-size: 1rem;
+		line-height: 20px;
+	}
+	.compact{
+		font-size: 1.2rem;
+	}
+	.compactLabel{
+		margin-top: -30px;
+	}
+	.compactLabel label{
+		font-size: .8rem;
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+
+}
